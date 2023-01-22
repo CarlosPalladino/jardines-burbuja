@@ -4,7 +4,6 @@ import Footer from '../includes/Footer'
 import "../../public/styles/Inscripcion.css"
 import { useState } from 'react'
 import { useForm } from "react-hook-form";
-import { Incription } from "../services/Incription"
 import { Link } from "react-router-dom"
 import Swal from 'sweetalert2'
 import withReactContent from 'sweetalert2-react-content'

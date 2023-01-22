@@ -4,9 +4,6 @@
     display:flex;
     flex-direction: column;
     border-radius:44px;
-    padding: 10px;
-    width: 89%;
-    margin: 15px;
     margin-top: 50px;}
     .form  p{
     color: white;
@@ -42,10 +39,11 @@
   }
   .button{
   padding: 10px;
-  color:white;
-  background-color: #27366B;
-  border:none;
-  margin:1.5rem;   }
+  margin:1.5rem; 
+  }
+  .button button {
+    border:none;
+  }
   @media (min-width: 768px){
   .form{
     border-radius:44px;
