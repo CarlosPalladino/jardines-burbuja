@@ -1,11 +1,15 @@
 *{
-    text-align:center;
     color:white;
   }
   .texts {
    font-family:poppins;
     text-align: center;
-    background-color:#27366B;}
+    background-color:#27366B;
+  }
+  .texts article{
+    padding: 14px;
+  }
+ 
    .texts h2{
       margin-top:2px;
       color:white;
@@ -20,12 +24,7 @@
       letter-spacing: 0.7px;
     }
     
-    .icon{
-      color: white;
-      font-size:25px;
-      margin:6px;
-      width:100%;
-      }
+ 
       .image{
         width:100%;
       }

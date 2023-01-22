@@ -1,17 +1,15 @@
 import React from 'react'
 import Footer from '../includes/Footer'
+import Header from '../includes/Header'
 import "../../public/styles/Consultas.css"
-
-import BurguerButton from '../components/burguerButtom'
 import { useState } from 'react'
 import { useForm } from "react-hook-form";
 import { consultas } from "../services/Consultas"
-import { Link } from "react-router-dom"
+// import { Link } from "react-router-dom"
 
 import Swal from 'sweetalert2'
 import withReactContent from 'sweetalert2-react-content'
 const MySwal = withReactContent(Swal)
-
 
 export default function Consultas() {
   const [body, setBody] = useState({ nombre: null, apellido: null, email: null, mensajes: null })
@@ -39,24 +37,11 @@ export default function Consultas() {
       })
     }
   }
-  const [clicked, setClicked] = useState(false)
-  const handleClick = () => {
-    setClicked(!clicked)
-  }
-  const { register, handleSubmit, formState: { errors } } = useForm();
-  return (
+const { register, handleSubmit, formState: { errors } } = useForm();
+return (
     <>
-      <NavContainer>
-          <Link to="/">< img src="/burbuja.svg" className='logo' href="/" /> </Link>
-        <div className="burguer">
-          <BurguerButton clicked={clicked} handleClick={handleClick} />
-        </div>
-        <div className={`links ${clicked ? 'active' : ''}`}>
-          <a onClick={handleClick} href="./Incripcion">Incrcipcion</a>
-        </div>
-      </NavContainer>
-      <Main>
-        <div className={`form ${clicked ? 'active' : ''}`}>
+        <Header/>
+        <section className="form"> 
         <form onSubmit={handleSubmit((onSubmit))}>
             <label className="names">Nombre</label>
             <input type="text" id="relleno" name="nombre" onChange={seting}
@@ -65,11 +50,9 @@ export default function Consultas() {
               minLength: 2,
               maxLength: 10,
               message: "minimo dos letras"
-
             })}
             />
             <p>{errors.nombre?.message}</p>
-
             <label className="names">Apellido</label>
             <input type="text" id="relleno" name="apellido" onChange={seting}
            {...register("apellido", {
@@ -78,11 +61,8 @@ export default function Consultas() {
              maxLength: 10,
              message: "minimo 2 letras"
            })}
-
-
             />
             <p>{errors.apellido?.message}</p>
-
             <label className="names">Email</label>
             <input type="text" id="relleno" onChange={seting} name="email"
               {...register("email", {
@@ -91,7 +71,6 @@ export default function Consultas() {
                 required: "este campo es obligatorio",
               })} />
             <p>{errors.email?.message}</p>
-
             <label className='names'>Mensaje</label>
             <textarea id='relleno' cols="30" rows="8" borde-radius="10px" onChange={seting}
               name="mensaje"{...register("mensaje", {
@@ -102,18 +81,15 @@ export default function Consultas() {
               })}
             ></textarea>
             <p>{errors.mensaje?.message}</p>
-            <section className='buton'>
+            <section className='button'>
               <button type="reset">Cancelar</button>
-
               <button type='submit'>Enviar</button>
-
+              </section>
+              </form>
             </section>
-          </form>
-        </div>
-        <BgDiv className={`initial ${clicked ? ' active' : ''}`}></BgDiv>
-      </Main>
-
-      <Footer />
+    
+         <Footer />
     </>
-  )
-}
+    )
+  }
+
