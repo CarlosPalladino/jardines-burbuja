@@ -3,27 +3,20 @@
   }
   .texts {
    font-family:poppins;
+   font-size: 22px;
     text-align: center;
-    background-color:#27366B;
   }
   .texts article{
     padding: 14px;
   }
  
-   .texts h2{
+   .texts article h2{
       margin-top:2px;
+      font-size: 22px;
       color:white;
       letter-spacing: 3px;
       border-bottom: 1px solid #fff;
     }
-    .texts  p{
-    font-size: 16px;
-      font-weight: 400;
-      line-height: 28px;
-      letter-spacing: 0.7px;
-    }
-    
- 
       .image{
         width:100%;
       }
@@ -35,12 +28,18 @@
       .image{
         width:60%
        }
-  
     }
       @media(min-width: 1024px){
-     .image{
-      width:50%
-     }
-     
-  
+        .image-container {
+          width: 100%;
       }
+        .img{
+          width: 76%;
+          padding: 1rem;      
+      }
+      .links {
+        position: initial;
+        gap: 2rem;
+        display: flex;
+    }
+    }

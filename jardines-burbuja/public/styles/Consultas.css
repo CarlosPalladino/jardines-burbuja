@@ -8,6 +8,10 @@
   text-decoration: none;
   margin-top: 2rem;
 }
+
+.form.article p{
+  font-size: 2opx;
+}
 .form{
     align-items: baseline;
     display:flex;
@@ -15,11 +19,7 @@
     border-radius:44px;
     margin-top: 50px;}
 
-    .form  p{
-    color: white;
-    text-align: center;
-    font-size: 12px;  
-  }
+ 
   
  
    form h3{
@@ -27,6 +27,7 @@
       margin:9px;
       font-size:22px
     }   
+
   #relleno {
    margin:15px; 
    background-color: white;
