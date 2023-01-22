@@ -1,7 +1,6 @@
 * {
   font-family: poppins;
   letter-spacing: 5px;
-  color: white;
 }
 .header-container {
   display: flex;
@@ -38,9 +37,9 @@
 .links a {
   font-size: 1rem;
   display: block;
-  text-transform: uppercase;
+  text-transform: uppercase; 
   text-decoration: none;
-  margin-top: 15px;
+  margin-top: 12px;
 }
 
 .image {
@@ -66,7 +65,7 @@
   }
 
   .links a {
-    padding: 1.5rem;
+    padding: 1rem;
     justify-content: space-around;
     display: inline;
     display: block;

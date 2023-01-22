@@ -4,7 +4,7 @@ import Header from '../includes/Header'
 import "../../public/styles/Consultas.css"
 import { useState } from 'react'
 import { useForm } from "react-hook-form";
-import { consultas } from "../services/Consultas"
+import { consultas } from "../services/consultas"
 // import { Link } from "react-router-dom"
 
 import Swal from 'sweetalert2'
@@ -72,7 +72,7 @@ return (
               })} />
             <p>{errors.email?.message}</p>
             <label className='names'>Mensaje</label>
-            <textarea id='relleno' cols="30" rows="8" borde-radius="10px" onChange={seting}
+            <textarea id='relleno-text' cols="30" rows="8" borde-radius="10px" onChange={seting}
               name="mensaje"{...register("mensaje", {
                 minLength: 2,
                 maxLength: 30,

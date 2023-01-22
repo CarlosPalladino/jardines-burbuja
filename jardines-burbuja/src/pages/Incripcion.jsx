@@ -4,6 +4,7 @@ import Footer from '../includes/Footer'
 import "../../public/styles/Inscripcion.css"
 import { useState } from 'react'
 import { useForm } from "react-hook-form";
+import {incription} from "../services/incription"
 import { Link } from "react-router-dom"
 import Swal from 'sweetalert2'
 import withReactContent from 'sweetalert2-react-content'
@@ -12,7 +13,6 @@ const MySwal = withReactContent(Swal)
 
 export default function Incripcion() {
   const [body, setBody] = useState({ nombre0: null, apellido0: null, email: null, telefono: null, nombre1: null, apellido1: null, turno: null })
-  console.log(body)
   const seting = e => {
     setBody({
       ...body,
@@ -22,7 +22,7 @@ export default function Incripcion() {
   const { register, handleSubmit, formState: { errors } } = useForm();
   const onSubmit = async (e) => {
     try {
-      let result = await Incription(body)
+      let result = await incription(body)
       console.log(result)
     } catch (error) {
       console.error(error)
@@ -43,7 +43,7 @@ export default function Incripcion() {
     <>
 
 <Header/>
-      <section className="form">
+      <section className="forms">
         <form onSubmit={handleSubmit((onSubmit))}>
           <label className="names">Nombre</label>
           <input type="text" id="relleno" name="nombre0" onChange={seting}

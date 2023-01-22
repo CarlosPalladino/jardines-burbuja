@@ -1,4 +1,4 @@
-export async function Incription(body) {
+export async function incription(body) {
     try {
         let query = await fetch("http://localhost:4000/padres/create", {
             method: "POST",

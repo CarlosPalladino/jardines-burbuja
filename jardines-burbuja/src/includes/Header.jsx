@@ -9,8 +9,9 @@ export default function Navbar() {
   return (
     <>
       <div className="header-container">
-        <article className="image-container">< img src="../../public/images/burbuja.svg" className='img' href="/" />
-        </article>
+        <picture className="image-container">
+          < img src="../../public/images/burbuja.svg" className='img' href="/" />
+        </picture>
         <div className='burguer'>
           <BurguerButton clicked={clicked} handleClick={handleClick} />
         </div>

@@ -11,7 +11,7 @@ export default function Navbar() {
         <article>
           <h2>Nuestra institucion</h2>
           <p> Brindamos a nuestros alumnos una educación integral y formación de las pirmeras enseñanzas</p>
-          <img src="../../public/images/imagen-jardin.jpg" alt="jardin" className='image' width="350" />
+          <img src="../../public/images/imagen-jardin.jpg"  alt="jardin" className='image' width="350" />
         </article>
         <article>
         <h2>Actividades</h2>
