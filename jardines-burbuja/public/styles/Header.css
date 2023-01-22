@@ -71,31 +71,7 @@
     display: block;
 
   }
-}
-
-
-
-
-.burguer {
-  @media(min-width: 768px) {
+  .burguer {
     display: none;
   }
-}
-
-.initial {
-  background-color: #27366B;
-  position: absolute;
-  top: -1000px;
-  left: -1000px;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  transition: all .8s;
-}
-
-initial.active {
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 126%;
 }
