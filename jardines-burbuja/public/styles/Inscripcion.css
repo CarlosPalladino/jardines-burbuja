@@ -2,6 +2,16 @@
   font-size: 19px;
   font-family: poppins;
 }
+.conteiner-top{
+  display: flex;
+}
+.links a{
+  font-size: 1rem;
+  display: block;
+  text-transform: uppercase; 
+  text-decoration: none;
+  margin-top: 2rem;
+}
 
 .forms {
   padding: 3px;

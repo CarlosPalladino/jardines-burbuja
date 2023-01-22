@@ -1,10 +1,10 @@
 import React from 'react'
-import Header from '../includes/Header'
+import BurguerButton from '../components/BurguerButtom'
 import Footer from '../includes/Footer'
 import "../../public/styles/Inscripcion.css"
 import { useState } from 'react'
 import { useForm } from "react-hook-form";
-import {incription} from "../services/incription"
+import { incription } from "../services/incription"
 import { Link } from "react-router-dom"
 import Swal from 'sweetalert2'
 import withReactContent from 'sweetalert2-react-content'
@@ -37,12 +37,25 @@ export default function Incripcion() {
       })
     }
   }
+  const [clicked, setClicked] = useState(false)
+  const handleClick = () => {
+    setClicked(!clicked)
+  }
 
-  // }
   return (
     <>
-
-<Header/>
+    
+    <div className="conteiner-top">
+        <picture className="image-container">
+        <Link to="/">< img src="../../public/images/burbuja.svg" className='img' href="/" /> </Link>
+        </picture>
+        <nav className='burguer'>
+          <BurguerButton clicked={clicked} handleClick={handleClick} />
+        </nav>
+        <nav className={`links ${clicked ? 'active' : ''}`}>
+          <a onClick={handleClick} href="./Consultas">Consultas</a>
+        </nav>
+      </div>
       <section className="forms">
         <form onSubmit={handleSubmit((onSubmit))}>
           <label className="names">Nombre</label>
