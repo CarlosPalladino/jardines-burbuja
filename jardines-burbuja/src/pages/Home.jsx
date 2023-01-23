@@ -1,12 +1,18 @@
 import Header from '../includes/Header'
 import Footer from '../includes/Footer'
+import Carrusel from '../components/Carrusel'
 import "../../public/styles/Home.css"
 
 export default function Navbar() {
   return (
     <>
       <Header />
-      <section className='texts'>
+ 
+ <Carrusel />
+ 
+ 
+ 
+      {/* <section className='texts'>
         <i className="fa-solid fa-house icons"></i>
         <article className="article">
           <h2>Nuestra institucion</h2>
@@ -26,7 +32,7 @@ export default function Navbar() {
         </p>       
          <img src="../../public/images/fiesta-jardin.jpg" className='image' width="350" />
         </article>
-      </section>
+      </section> */}
       <Footer />
     </>
 
