@@ -10,7 +10,7 @@ export default function Navbar() {
     <>
       <div className="header-container">
         <picture className="image-container">
-          < img src="../../public/images/burbuja.svg" className='img' href="/" />
+          < img src="../../public/images/burbuja.svg" className='image' href="/" />
         </picture>
         <div className='burguer'>
           <BurguerButton clicked={clicked} handleClick={handleClick} />

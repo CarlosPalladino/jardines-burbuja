@@ -1,47 +1,35 @@
-import "../../public/styles/Carrusel.css"
+// import "../../public/styles/Carrusel.css"
+// import "../services/carousel"
+export default function Carrusel() {
+    <div className="slideshow-container">
 
-export default function Carrusel(){
-
-<figure id="banner">
-    <article id="carousel-container" class="carousel-container">
-        <div class="mySlides animate">
-            <img src="../../public/images/fiesta-jardin.jpg" alt="slide" />
-            <h2>Nuestra institucion</h2>
-          <p> Brindamos a nuestros alumnos una educación integral y formación de las pirmeras enseñanzas</p>
-        </div>
-        <div class="mySlides animate">
+        <div className="mySlides">
+            <q>I love you the more in that I believe you had liked me for my own sake and for nothing else</q>
+            <p className="author">- John Keats</p>
         </div>
 
-        <div class="mySlides animate">
-            <img src="../../public/images/imagen-jardin.jpg" alt="slide" />
-            <h2>Actividades</h2>
-        <p> Contamos con un ambiente cuidado para que cada actividad se realice 100% seguro </p>
+        <div className="mySlides">
+            <q>But man is not made for defeat. A man can be destroyed but not defeated.</q>
+            <p className="author">- Ernest Hemingway</p>
         </div>
 
-        <div class="mySlides animate">
-
+        <div className="mySlides">
+            <q>I have not failed. I've just found 10,000 ways that won't work.</q>
+            <p className="author">- Thomas A. Edison</p>
+        </div>
+        <div className="mySlides">
+            {/* <!-- Next/prev buttons --> */}
+            <a className="prev" onClick="plusSlides(-1)">&#10094;</a>
+            <a className="next" onClick="plusSlides(1)">&#10095;</a>
         </div>
 
-        <div class="mySlides animate">
-            <img src="../../public/images/fiesta-jardin.jpg" alt="slide" />
-            <h2> Nuestros objetivos</h2>
-        <p>
-          Ofrecer una educación formal, incorporada a la enseñanza oficial, que los forme como sujetos competentes en donde se favorezca el desarrollo de sus habilidades para acceder a mejores condiciones de vida,
-        </p>       
+        {/* // <!--Dots / bullets / indicators-- > */}
+        <div className="dot-container">
+            <span className="dot" onClick="currentSlide(1)"></span>
+            <span className="dot" onClick="currentSlide(2)"></span>
+            <span className="dot" onClick="currentSlide(3)"></span>
         </div>
+    </div >
+    
 
-        {/* <!-- Next and previous buttons --> */}
-        <a class="prev" onclick="prevSlide()">&#10094;</a>
-        <a class="next" onclick="nextSlide()">&#10095;</a>
-
-        {/* <!-- The dots/circles --> */}
-        <div class="dots-container">
-            <span class="dots" onclick="currentSlide(1)"></span>
-            <span class="dots" onclick="currentSlide(2)"></span>
-            <span class="dots" onclick="currentSlide(3)"></span>
-            <span class="dots" onclick="currentSlide(4)"></span>
-            <span class="dots" onclick="currentSlide(5)"></span>
-        </div>
-    </article>
-</figure>
 }

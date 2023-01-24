@@ -1,45 +1,89 @@
-*{
-    color:white;
+* {
+  color: white;
+  margin:0;
+  padding: 0;
+
+}
+
+.texts {
+  background-color: #27366B;
+
+  font-family: poppins;
+  font-size: 22px;
+  text-align: center;
+}
+
+.texts article {
+  padding: 14px;
+}
+
+.texts article h2 {
+  margin-top: 2px;
+  font-size: 22px;
+  letter-spacing: 3px;
+  border-bottom: 1px solid #fff;
+}
+
+.img {
+  width: 100%;
+}
+
+@media(min-width: 768px) {
+  .logo {
+    width: 40%;
+    margin: -12px 21px 12px -45px;
   }
-  .texts {
-   font-family:poppins;
-   font-size: 22px;
-    text-align: center;
+
+  .img {
+    width: 100;
+    margin:auto;
   }
-  .texts article{
-    padding: 14px;
+}
+
+@media(min-width: 1024px) {
+  .article {
+    margin: 150px auto ;
+    position: relative;
+    overflow: hidden;
   }
- 
-   .texts article h2{
-      margin-top:2px;
-      font-size: 22px;
-      color:white;
-      letter-spacing: 3px;
-      border-bottom: 1px solid #fff;
-    }
-      .image{
-        width:100%;
-      }
-    @media(min-width: 768px){
-      .logo{
-        width: 40%;
-        margin: -12px 21px 12px -45px;
-      }
-      .image{
-        width:60%
-       }
-    }
-      @media(min-width: 1024px){
-        .image-container {
-          width: 100%;
-      }
-        .img{
-          width: 76%;
-          padding: 1rem;      
-      }
-      .links {
-        position: initial;
-        gap: 2rem;
-        display: flex;
-    }
-    }
+  .image-container {
+    width: 500px;
+    position: relative;
+    overflow: hidden;
+  }
+  .img {
+    width: 100%;
+    padding: 1rem;
+    height: auto;
+    transition: all .5 s;
+  }
+.article:hover img{
+  transform: scale(1.09);
+
+}
+.article .text-container{
+  position: absolute;
+  top:-1000%;
+  left:0;
+  text-align: justify;
+  height: 100%;
+  color: white;
+  box-sizing: border-box;
+}
+.article:hover .text-container{
+  background: radial-gradient(black, transparent);
+  top: 2rem;
+  display: flex;
+  left: 9px;
+  align-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+  .links {
+    position: initial;
+    gap: 2rem;
+    display: flex;
+  }
+
+
+}
