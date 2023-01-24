@@ -67,23 +67,42 @@
   .image-container{
     width: 100%;
   }
-  /* .img{
-    width: 50%;
-  } */
+  .image{  
+    margin: -15px 16px 9px -136px;
+   } 
+  
   .links {
     position: initial;
     display: flex;
   }
 
   .links a {
-    padding: 1rem;
+    margin: 10px;
     justify-content: space-around;
     display: inline;
     display: block;
-
+    border-bottom: 2px solid ; 
   }
   .burguer {
     display: none;
   }
+  
+}
+@media (min-width : 1024px){
+
+  .links a {
+    padding: 1rem;
+    justify-content: space-around;
+    display: inline;
+    display: block;
+    border-bottom: 2px solid ; 
+  }
+  .burguer {
+    display: none;
+  }
+ .image{  
+  margin: -15px 16px 9px -136px;
+ } 
+
   
 }
