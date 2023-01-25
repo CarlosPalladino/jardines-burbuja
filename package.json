@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "express": "^4.18.2",
+    "sequelize": "^6.28.0",
+    "validator": "^13.7.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  },
+  "Scripts": {
+    "test": "nodemon src/app.js  -e json,js,mjs,ejs",
+    "start": "node src/app.js",
+    "sq-i": "sequelize init",
+    "sq-ms": "sequelize init:migrations && sequelize init:seeders",
+    "sq-mg": "sequelize migration:generate --name mensaje",
+    "sq-sg": "sequelize seed:generate --name User",
+    "sq-db": "sequelize db:drop && sequelize db:create && sequelize db:migrate && sequelize "
+  }
+}
