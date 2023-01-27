@@ -29,7 +29,7 @@
   left: -2000px;
   right: 0;
   margin-left: auto;
-  margin-right: auto;
+  /* margin-right: auto; */
   text-align: center;
   transition: all .5s ease;
 }
@@ -90,17 +90,28 @@
 }
 @media (min-width : 1024px){
 
+.header-container{
+  display: flex;
+  align-items:center;
+  justify-content:space-between;
+}
+.links{
+  display: flex;
+  justify-content: flex-end;
+}
   .links a {
     padding: 1rem;
-    justify-content: space-around;
+    /* justify-content: space-around; */
     display: inline;
-    display: block;
+    display: flex;
     border-bottom: 2px solid ; 
+    margin: 2rem;
   }
   .burguer {
     display: none;
   }
  .image{  
+  width: 50%;
   margin: -15px 16px 9px -136px;
  } 
 

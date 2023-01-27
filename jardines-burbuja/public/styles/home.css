@@ -50,17 +50,17 @@
     position: relative;
     overflow: hidden;
   }
+  
   .image-container {
-    width: 500px;
+    width: 100% ;
     position: relative;
     overflow: hidden;
   }
   .img {
-    width: 100%;
+    width: 70%;
     margin-top: 10px;
-
     height: auto;
-    transition: all .5 s;
+    transition: all .5s;
   }
 .article:hover img{
   transform: scale(1.09);
@@ -79,16 +79,11 @@
   background: radial-gradient(black, transparent ,transparent);
   top: 2rem;
   display: flex;
+  flex-direction: column;
   left: 9px;
   align-content: center;
   flex-direction: row;
   flex-wrap: wrap;
 }
-  .links {
-    position: initial;
-    gap: 2rem;
-    display: flex;
-  }
-
 
 }
