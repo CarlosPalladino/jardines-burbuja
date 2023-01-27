@@ -1,6 +1,7 @@
 import Header from '../includes/Header'
 import Footer from '../includes/Footer'
 import "../../public/styles/Home.css"
+// import "../../styles/Home.css"
 export default function Navbar() {
   return (
     <>
