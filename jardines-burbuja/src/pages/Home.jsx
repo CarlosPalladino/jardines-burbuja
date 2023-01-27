@@ -11,7 +11,7 @@ export default function Navbar() {
           <h2>Nuestra institucion</h2>
           <img src="../../public/images/imagen-jardin.jpg" alt="jardin" className='img' />
           <div className="text-container">
-            <p > Brindamos a nuestros alumnos una educación integral y formación de las pirmeras enseñanzas</p>
+            <p > Brinda a los alumnos una educación integral y formación de calidad</p>
           </div>
 
         </article>
@@ -19,7 +19,7 @@ export default function Navbar() {
           <h2> Nuestras Actividades</h2>
           <img src="../../public/images/patio-de-juegos-del-jardin.jpg" className='img' />
           <div className="text-container">
-            <p > Contamos con un ambiente cuidado para que cada actividad se realice 100% seguro </p>
+            <p > Contamos con un ambiente cuidado para actividades <span> seguras </span> </p>
           </div>
 
           <i className="fa-solid fa-graduation-cap icons"></i>
@@ -30,7 +30,7 @@ export default function Navbar() {
           <img src="../../public/images/fiesta-jardin.jpg" className='img' />
           <div className="text-container">
             <p>
-              Brindar una educación formal, incorporada a la enseñanza oficial, que los forme como sujetos competentes en donde se favorezca el desarrollo de sus habilidades para acceder a mejores condiciones de vida,
+              Brindar seguridad, enseñanza ,buscar referencias,
             </p>
           </div>
         </article>

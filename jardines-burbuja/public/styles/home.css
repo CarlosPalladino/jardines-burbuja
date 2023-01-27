@@ -13,19 +13,21 @@
 }
 
 
-
-.texts article h2 {
+.article h2 {
   margin-top: 2px;
   font-size: 22px;
   letter-spacing: 3px;
-  border-bottom: 1px solid #fff;
 }
+
 
 .img {
   width: 100%;
 }
 
 @media(min-width: 768px) {
+ .texts .article {
+  padding: 14px;
+ }
   .logo {
     width: 40%;
     margin: -12px 21px 12px -45px;
@@ -34,6 +36,7 @@
   .img {
     width: 100;
     margin:auto;
+    border-radius: 10px;
   }
 }
 
@@ -55,13 +58,14 @@
   }
   .img {
     width: 70%;
+    box-shadow: 1px 1px 10px black;
     margin-top: 10px;
     height: auto;
     transition: all .5s;
+    border-radius: 10px;
   }
 .article:hover img{
   transform: scale(1.09);
-
 }
 .article .text-container{
   position: absolute;
@@ -69,18 +73,20 @@
   left:0;
   text-align: justify;
   height: 100%;
-  color: white;
   box-sizing: border-box;
 }
 .article:hover .text-container{
   background: radial-gradient(black, transparent ,transparent);
-  top: 2rem;
+   /* background-color: rgb(0,0,0,0.50);  */
+  top: 10.5rem;
+  right: 21rem;
   display: flex;
   flex-direction: column;
-  left: 9px;
+  width: 70%;
+  left: 8rem;
   align-content: center;
   flex-direction: row;
+  height: 100%;
   flex-wrap: wrap;
 }
-
 }
