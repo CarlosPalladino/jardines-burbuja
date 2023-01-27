@@ -21,23 +21,12 @@ const mensaje = {
         }
     },
     created: async (req, res) => {
-<<<<<<< HEAD
-
-        console.log('req.body')
-        // let validaciones = validationResult(req)
-        // let errors = validaciones
-        // if (errors && errors.length > 0) {
-        //      validaciones.mapped()
-        // }
-        // else {
-=======
         let validaciones = validationResult(req)
         let errors = validaciones
         if (errors && errors.length > 0) {
              validaciones.mapped()
         }
         else {
->>>>>>> b87e22bf88ab24130f437b538fcecb7aceb71784
             await mensajes.create({
                 nombre: req.body.nombre,
                 apellido: req.body.apellido,
@@ -45,11 +34,7 @@ const mensaje = {
                 mensajes: req.body.mensajes
             })
             return res.send('tu consulta fue realizada')
-<<<<<<< HEAD
-    // }
-=======
         }
->>>>>>> b87e22bf88ab24130f437b538fcecb7aceb71784
     },
 
     deelete: async (req, res) => {

@@ -36,11 +36,7 @@ const tutores = {
 
     created: async (req, res) => {
         let padresdb = await padres.create({
-<<<<<<< HEAD
-            nombre: req.body.nombre0, 
-=======
             nombre: req.body.nombre0,
->>>>>>> b87e22bf88ab24130f437b538fcecb7aceb71784
             apellido: req.body.apellido0,
             email: req.body.email,
             telefono: req.body.telefono,
