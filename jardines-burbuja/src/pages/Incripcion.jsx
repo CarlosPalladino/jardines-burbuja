@@ -47,7 +47,7 @@ export default function Incripcion() {
     
     <div className="conteiner-top">
         <picture className="image-container">
-        <Link to="/">< img src="../../public/images/burbuja.svg" className='img' href="/" /> </Link>
+        <Link to="/">< img src="../../public/images/burbuja.svg"id='logo'href="/" /> </Link>
         </picture>
         <nav className='burguer'>
           <BurguerButton clicked={clicked} handleClick={handleClick} />

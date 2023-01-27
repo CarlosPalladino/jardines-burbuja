@@ -12,6 +12,7 @@ import withReactContent from 'sweetalert2-react-content'
 const MySwal = withReactContent(Swal)
 
 export default function Consultas() {
+
   const [body, setBody] = useState({ nombre: null, apellido: null, email: null, mensajes: null })
   console.log(body)
   const seting = e => {
@@ -47,7 +48,7 @@ export default function Consultas() {
     <>
       <div className="conteiner-top">
         <picture className="image-container">
-        <Link to="/">< img src="../../public/images/burbuja.svg" className='img' href="/" /> </Link>
+        <Link to="/">< img src="../../public/images/burbuja.svg" id='logo' href="/" /> </Link>
         </picture>
         <nav className='burguer'>
           <BurguerButton clicked={clicked} handleClick={handleClick} />

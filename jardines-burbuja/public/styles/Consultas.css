@@ -1,138 +1,175 @@
-.conteiner-top{
+.conteiner-top {
   display: flex;
 }
-.links a{
+#logo{
+  width: 100%;
+  margin: -15px 16px 9px -90px;
+
+}
+
+.links a {
   font-size: 1rem;
   display: block;
-  text-transform: uppercase; 
+  text-transform: uppercase;
   text-decoration: none;
   margin-top: 2rem;
 }
 
-.form.article p{
+.form.article p {
   font-size: 2opx;
 }
-.form{
-    align-items: baseline;
-    display:flex;
-    flex-direction: column;
-    border-radius:44px;
-    margin-top: 50px;}
 
- 
-  
- 
-   form h3{
-      color: white;
-      margin:9px;
-      font-size:22px
-    }   
+.form {
+  align-items: baseline;
+  display: flex;
+  flex-direction: column;
+  border-radius: 44px;
+  margin-top: 50px;
+}
 
-  #relleno {
-   margin:15px; 
-   background-color: white;
-  padding:3px;
-  margin-top:2px;
-  border-radius:10px;
-  }
-#relleno-text{
-  margin:15px; 
+
+
+
+form h3 {
+  color: white;
+  margin: 9px;
+  font-size: 22px
+}
+
+#relleno {
+  margin: 15px;
+  background-color: white;
+  padding: 3px;
+  margin-top: 2px;
+  border-radius: 10px;
+}
+
+#relleno-text {
+  margin: 15px;
   background-color: white;
 
-  padding:3px;
-  margin-top:2px;
-  border-radius:10px;  
+  padding: 3px;
+  margin-top: 2px;
+  border-radius: 10px;
 }
-  
-  #turno{
-  width:69%;
+
+#turno {
+  width: 69%;
   margin: 15px;
   margin-top: 2px;
   border-radius: 10px;
   padding: 3px
-  }
-  .names{
+}
+
+.names {
   color: white;
   margin-top: 10px;
   margin: 24px;
-  }
-  .button{
-    padding: 1.5rem;
+}
 
+.button {
+  padding: 1.5rem;
+
+}
+
+.button button {
+  border: none;
+  background-color: none;
+}
+
+@media (min-width: 768px) {
+  .conteiner-top {
+    display: flex;
   }
-  .button button {
-    border:none;
+
+  .image-container {
+    width: 50%;
   }
-  @media (min-width: 768px){
-  .form{
-    border-radius:44px;
+
+  .logo {
+    margin: -15px 16px 9px -90px;
+    width: 50%;
+  }
+
+  .form {
+    border-radius: 44px;
     padding: 10px;
-    font-size:20px;
+    font-size: 20px;
     width: 60%;
     align-items: center;
     margin: 10rem;
-    margin-top: 50px;}
-    .form  p{
-    color: white;
-    font-size: 12px;  
+    margin-top: 50px;
   }
+
+  .form p {
+    color: white;
+    font-size: 12px;
+  }
+
   #relleno {
-    margin:15px;
-    padding:3px;
-    border-radius:10px;
-   }
-   .names{
+    margin: 15px;
+    padding: 3px;
+    border-radius: 10px;
+  }
+
+  .names {
     color: white;
     margin: 18px;
     display: flex;
     font-size: 20px;
-   }
-   button{
+  }
+
+  button {
     padding: 10px;
-    font-size:20px;
-    color:white;
+    font-size: 20px;
+    color: white;
     background-color: #27366B;
-    border:none;
-    
+    border: none;
+
   }
+}
+
+@media (min-width: 1024px) {
+  * {
+    font-size: 21px;
+    color: white;
+    font-family: poppins
   }
-  
-  @media (min-width: 1024px){
-    *{
-      font-size:21px;
-      color:white;
-      font-family:poppins
-  
-    }
-    .form{
-      border-radius:44px;
-      padding: 10px;
-      width: 60%;
-      font-size: 20px;
-      align-items: center;
-      margin: 13rem;
-      margin-top: 50px;}
-      .form p{
-      color: white;
-      font-size: 12px;  
-    }
-    #relleno {
-      margin:15px;
-      padding:5px;
-      border-radius:10px;
-      width:100%;
-     }
-     .names{
-      color: white;
-      margin: 18px;
-      display: flex;
-      font-size:22px;
-     }
-     .buton{
-      padding: 10px;
-      color:white;
-      background-color: #27366B;
-      border:none;
-      
-    }
-    }
+
+  .form {
+    border-radius: 44px;
+    padding: 10px;
+    width: 60%;
+    font-size: 20px;
+    align-items: center;
+    margin: 13rem;
+    margin-top: 50px;
+  }
+
+  .form p {
+    color: white;
+    font-size: 12px;
+  }
+
+  #relleno {
+    margin: 15px;
+    padding: 5px;
+    border-radius: 10px;
+    width: 100%;
+  }
+
+  .names {
+    color: white;
+    margin: 18px;
+    display: flex;
+    font-size: 22px;
+  }
+
+  .buton {
+    padding: 10px;
+    color: white;
+    background-color: #27366B;
+    border: none;
+
+  }
+}

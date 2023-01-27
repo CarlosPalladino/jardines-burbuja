@@ -5,6 +5,15 @@
 .conteiner-top{
   display: flex;
 }
+.image-container{
+  width: 50%;
+
+}
+#logo{
+  width: 100%;
+  margin: -15px 16px 9px -90px;
+
+}
 .links a{
   font-size: 1rem;
   display: block;
@@ -55,14 +64,16 @@
   margin-top: 10px;
 }
 
-.button {
-  padding: 1.5rem;
+.button {  
+   padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
 
 }
 
 .button button {
   border: none;
-
+background: none;
 }
 
 @media (min-width: 768px) {
