@@ -56,8 +56,8 @@ export default function Incripcion() {
           <a onClick={handleClick} href="./Consultas">Consultas</a>
         </nav>
       </div>
-      <section className="forms">
-        <form onSubmit={handleSubmit((onSubmit))}>
+      <section>
+        <form  className="forms" onSubmit={handleSubmit((onSubmit))}>
           <label className="names">Nombre</label>
           <input type="text" id="relleno" name="nombre0" onChange={seting}
             {...register("nombre", {

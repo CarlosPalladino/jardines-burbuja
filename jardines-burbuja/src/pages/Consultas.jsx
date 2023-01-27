@@ -57,8 +57,8 @@ export default function Consultas() {
           <a onClick={handleClick} href="./Incripcion">Incrcipcion</a>
         </nav>
       </div>
-      <section className="form">
-        <form onSubmit={handleSubmit((onSubmit))}>
+      <section>
+        <form  className="forms"onSubmit={handleSubmit((onSubmit))}>
           <label className="names">Nombre</label>
           <input type="text" id="relleno" name="nombre" onChange={seting}
             {...register("nombre", {

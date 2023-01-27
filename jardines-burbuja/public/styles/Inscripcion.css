@@ -23,8 +23,9 @@
 }
 
 .forms {
-  padding: 3px;
-}
+  display: flex;
+  flex-direction: column;
+  align-items: center;}
 
 .forms p {
   color: white;
@@ -45,7 +46,7 @@
 #relleno {
   margin: 20px;
   padding: 3px;
-  background: white;
+  width: 90%;
   margin-top: 2px;
   border-radius: 10px;
 }
@@ -77,18 +78,33 @@ background: none;
 }
 
 @media (min-width: 768px) {
+  .conteiner-top{
+    align-items: center;
+
+  }
+  .image-container {
+    width: 50%;
+  }
+
+  #logo {
+    margin: -15px 16px 9px -90px;
+    width: 50%;
+  }
+
   .forms {
     border-radius: 44px;
     padding: 10px;
     font-size: 20px;
     width: 60%;
+    display: block;
     align-items: center;
     margin: 10rem;
     margin-top: 50px;
   }
-
+  .forms label{
+    text-align: center;
+  }
   .forms p {
-    color: white;
     font-size: 12px;
   }
 
@@ -99,7 +115,6 @@ background: none;
   }
 
   .names {
-    color: white;
     margin: 18px;
     display: flex
   }

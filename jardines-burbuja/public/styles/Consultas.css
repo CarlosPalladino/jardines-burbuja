@@ -46,8 +46,6 @@ form h3 {
 
 #relleno-text {
   margin: 15px;
-  background-color: white;
-
   padding: 3px;
   margin-top: 2px;
   border-radius: 10px;
@@ -86,7 +84,7 @@ form h3 {
     width: 50%;
   }
 
-  .logo {
+  #logo {
     margin: -15px 16px 9px -90px;
     width: 50%;
   }
@@ -111,6 +109,14 @@ form h3 {
     padding: 3px;
     border-radius: 10px;
   }
+  #relleno-text {
+    margin: 15px;
+    padding: 3px;
+    margin-top: 2px;
+    border-radius: 10px;
+    width: 90%;
+  }
+  
 
   .names {
     color: white;
@@ -155,7 +161,7 @@ form h3 {
     margin: 15px;
     padding: 5px;
     border-radius: 10px;
-    width: 100%;
+    width: 90%;
   }
 
   .names {

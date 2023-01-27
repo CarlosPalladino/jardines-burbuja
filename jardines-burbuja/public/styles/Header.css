@@ -101,7 +101,6 @@
 }
   .links a {
     padding: 1rem;
-    /* justify-content: space-around; */
     display: inline;
     display: flex;
     border-bottom: 2px solid ; 
@@ -112,8 +111,8 @@
   }
  .image{  
   width: 50%;
-  margin: -15px 16px 9px -136px;
- } 
+  margin: -15px 16px 9px -10px;
+} 
 
   
 }
