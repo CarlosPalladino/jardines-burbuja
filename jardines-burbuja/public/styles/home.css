@@ -7,15 +7,12 @@
 
 .texts {
   background-color: #27366B;
-
   font-family: poppins;
   font-size: 22px;
   text-align: center;
 }
 
-.texts article {
-  padding: 14px;
-}
+
 
 .texts article h2 {
   margin-top: 2px;
