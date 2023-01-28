@@ -49,7 +49,7 @@ export default function Consultas() {
     <>
       <div className="conteiner-top">
         <picture className="image-container">
-        <Link to="/">< img src="../../public/images/burbuja.svg" className='logo' href="/" /> </Link>
+        <Link to="/">< img src="../../public/images/burbuja.svg" id='logo' href="/" /> </Link>
         </picture>
         <nav className='burguer'>
           <BurguerButton clicked={clicked} handleClick={handleClick} />

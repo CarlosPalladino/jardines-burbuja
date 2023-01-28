@@ -6,23 +6,24 @@ export default function Navbar() {
   const handleClick = () => {
     setClicked(!clicked)
   }
-  let homeLinks = <a onClick={handleClick} href="./pages/Incripcion">Incrcipcion</a>
-    &&
-    <a onClick={handleClick} href="./pages/Consultas">Consultas</a>;
-    let consultLiks = <a onClick={handleClick} href="./pages/Incripcion">Incrcipcion</a>
-    let incriptionLinks = <a onClick={handleClick} href="./pages/Consultas">Consultas</a>
-  let pageResult = homeLinks 
- 
-  let page
-  if (page == homeLinks) {
-    pageResult = incriptionLinks &&  consultLiks
-  }
-  else if (page == consultLiks) {
-    pageResult = consultLiks
-  }
-  else if (page == incriptionLinks) {
-    pageResult = incriptionLinks
-  }
+
+
+  // let homeLinks = 
+  // <a onClick={handleClick} href="./pages/Incripcion">Incrcipcion</a>
+  //   &&
+  
+  //   <a onClick={handleClick} href="./pages/Consultas">Consultas</a>;
+  // let consultLiks = <a onClick={handleClick} href="./pages/Incripcion">Incrcipcion</a>
+  // let incriptionLinks = <a onClick={handleClick} href="./pages/Consultas">Consultas</a>
+  // let page = homeLinks
+  // if (page == homeLinks) {
+  //   incriptionLinks && consultLiks
+  // }
+  // else if (page == consultLiks) {
+  //   consultLiks
+  // }
+  // else if (page == incriptionLinks) {
+  //   incriptionLinks
   return (
     <>
       <div className="header-container">
@@ -34,9 +35,9 @@ export default function Navbar() {
         </div>
         <nav className={`links ${clicked ? 'active' : ''}`}>
 
-          {pageResult}
-          {/* <a onClick={handleClick} href="./pages/Incripcion">Incrcipcion</a>
-          <a onClick={handleClick} href="./pages/Consultas">Consultas</a> */}
+          {/* {page} */}
+           <a onClick={handleClick} href="./pages/Incripcion">Incrcipcion</a>
+          <a onClick={handleClick} href="./pages/Consultas">Consultas</a> 
         </nav>
       </div>
 
