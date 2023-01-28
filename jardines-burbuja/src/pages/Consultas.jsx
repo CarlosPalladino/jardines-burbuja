@@ -12,7 +12,7 @@ import withReactContent from 'sweetalert2-react-content'
 const MySwal = withReactContent(Swal)
 
 export default function Consultas() {
-
+  
   const [body, setBody] = useState({ nombre: null, apellido: null, email: null, mensajes: null })
   console.log(body)
   const seting = e => {
@@ -44,11 +44,12 @@ export default function Consultas() {
       })
     }
   }
+
   return (
     <>
       <div className="conteiner-top">
         <picture className="image-container">
-        <Link to="/">< img src="../../public/images/burbuja.svg" id='logo' href="/" /> </Link>
+        <Link to="/">< img src="../../public/images/burbuja.svg" className='logo' href="/" /> </Link>
         </picture>
         <nav className='burguer'>
           <BurguerButton clicked={clicked} handleClick={handleClick} />
@@ -57,8 +58,8 @@ export default function Consultas() {
           <a onClick={handleClick} href="./Incripcion">Incrcipcion</a>
         </nav>
       </div>
-      <section>
-        <form  className="forms"onSubmit={handleSubmit((onSubmit))}>
+      <section className="form">
+        <form onSubmit={handleSubmit((onSubmit))}>
           <label className="names">Nombre</label>
           <input type="text" id="relleno" name="nombre" onChange={seting}
             {...register("nombre", {
