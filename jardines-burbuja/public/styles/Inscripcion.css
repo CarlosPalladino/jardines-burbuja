@@ -22,10 +22,6 @@
   margin-top: 2rem;
 }
 
-.forms {
-  display: flex;
-  flex-direction: column;
-  align-items: center;}
 
 .forms p {
   color: white;
@@ -119,13 +115,7 @@ background: none;
     display: flex
   }
 
-  /* .button {
-    padding: 10px;
-    font-size: 20px;
-    color: white;
-    background-color: #27366B;
-    border: none;
-  } */
+
 }
 
 @media (min-width: 1024px) {
