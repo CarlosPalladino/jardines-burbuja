@@ -1,6 +1,6 @@
 * {
   color: white;
-  margin:0;
+  margin: 0;
   padding: 0;
 
 }
@@ -17,7 +17,6 @@
   font-size: 22px;
   margin: 13px;
   letter-spacing: 3px;
-  border-bottom: 1px solid #fff;
 }
 
 .img {
@@ -25,61 +24,60 @@
 }
 
 @media(min-width: 768px) {
-  .logo {
-    width: 40%;
-    margin: -12px 21px 12px -45px;
-  }
-
   .img {
-    width: 100;
-    margin:auto;
+    width: 80%;
+    margin: auto;
   }
 }
 
 @media(min-width: 1024px) {
   .texts .article h2 {
     border: none;
-    margin:1rem
+    margin: 1rem
   }
+
   .article {
-    margin: 150px auto ;
+    margin: 150px auto;
     position: relative;
     overflow: hidden;
   }
+
   .image-container {
     width: 500px;
     position: relative;
     overflow: hidden;
   }
-  .img {
-    width: 100%;
-    margin-top: 10px;
 
-    height: auto;
+  .img {
+    width: 70%;
+    margin-top: 10px;
+    box-shadow: 1px 1px 10px black;
+    border-radius: 10px;
     transition: all .5 s;
   }
-.article:hover img{
-  transform: scale(1.09);
 
-}
-.article .text-container{
-  position: absolute;
-  top:-1000%;
-  left:0;
-  text-align: justify;
-  height: 100%;
-  color: white;
-  box-sizing: border-box;
-}
-.article:hover .text-container{
-  background: radial-gradient(black, transparent ,transparent);
-  top: 2rem;
-  display: flex;
-  left: 9px;
-  align-content: center;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
+  .article:hover img {
+    transform: scale(1.09);
+    background: radial-gradient(black, transparent, transparent); 
+
+  }
+
+  .article .text-container {
+    position: absolute;
+    top: -1000%;
+    left: 0;
+    text-align: justify;
+    height: 100%;
+    box-sizing: border-box;
+  }
+
+  .article:hover .text-container {
+    top: 14rem;
+    display: flex;
+    left: 8rem;
+    width: 70%;
+  }
+
   .links {
     position: initial;
     gap: 2rem;

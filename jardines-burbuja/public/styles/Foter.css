@@ -26,6 +26,8 @@ letter-spacing:2xpx;
     right: 28px;   
   }
   @media (min-width: 768px) {
-    .footer-container
-    {display:flex;}
+    .footer-container{
+      display:flex;
+    align-items: center;
+    }
   }
