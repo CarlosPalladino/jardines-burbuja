@@ -1,5 +1,4 @@
 import React from 'react'
-import BurguerButton from '../components/BurguerButtom'
 import Footer from '../includes/Footer'
 import Navbar from '../includes/Header'
 import "../../public/styles/Inscripcion.css"
@@ -44,7 +43,6 @@ export default function Incripcion() {
     <>
       <Navbar >
         <div>  
-    
              <Link to ="./Consultas">Consultas</Link>
         </div>
       </Navbar>
