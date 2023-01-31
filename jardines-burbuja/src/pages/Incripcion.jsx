@@ -1,6 +1,7 @@
 import React from 'react'
 import BurguerButton from '../components/BurguerButtom'
 import Footer from '../includes/Footer'
+import Navbar from '../includes/Header'
 import "../../public/styles/Inscripcion.css"
 import { useState } from 'react'
 import { useForm } from "react-hook-form";
@@ -37,27 +38,18 @@ export default function Incripcion() {
       })
     }
   }
-  const [clicked, setClicked] = useState(false)
-  const handleClick = () => {
-    setClicked(!clicked)
-  }
+
 
   return (
     <>
+      <Navbar >
+        <div>  
     
-    <div className="conteiner-top">
-        <picture className="image-container">
-        <Link to="/">< img src="../../public/images/burbuja.svg"id='logo'href="/" /> </Link>
-        </picture>
-        <nav className='burguer'>
-          <BurguerButton clicked={clicked} handleClick={handleClick} />
-        </nav>
-        <nav className={`links ${clicked ? 'active' : ''}`}>
-          <a onClick={handleClick} href="./Consultas">Consultas</a>
-        </nav>
-      </div>
+             <Link to ="./Consultas">Consultas</Link>
+        </div>
+      </Navbar>
       <section>
-        <form  className="forms" onSubmit={handleSubmit((onSubmit))}>
+        <form className="forms" onSubmit={handleSubmit((onSubmit))}>
           <label className="names">Nombre</label>
           <input type="text" id="relleno" name="nombre0" onChange={seting}
             {...register("nombre", {
@@ -123,6 +115,7 @@ export default function Incripcion() {
             })}
           />
           <p>{errors.turno?.message}</p>
+          <input type="hidden" name="_autoresponse" value="Gracias por Inscribirte ! a la brevedad nos contactaremos" />
 
           <section className="button" >
             <button type="reset">Cancelar</button>

@@ -1,7 +1,7 @@
 import React from 'react'
 import Footer from '../includes/Footer'
+import Navbar from '../includes/Header'
 import "../../public/styles/Consultas.css"
-import BurguerButton from '../components/BurguerButtom'
 import { useState } from 'react'
 import { useForm } from "react-hook-form";
 import { consultas } from "../services/consultas"
@@ -12,7 +12,7 @@ import withReactContent from 'sweetalert2-react-content'
 const MySwal = withReactContent(Swal)
 
 export default function Consultas() {
-  
+
   const [body, setBody] = useState({ nombre: null, apellido: null, email: null, mensajes: null })
   console.log(body)
   const seting = e => {
@@ -47,17 +47,9 @@ export default function Consultas() {
 
   return (
     <>
-      <div className="conteiner-top">
-        <picture className="image-container">
-        <Link to="/">< img src="../../public/images/burbuja.svg" id='logo' href="/" /> </Link>
-        </picture>
-        <nav className='burguer'>
-          <BurguerButton clicked={clicked} handleClick={handleClick} />
-        </nav>
-        <nav className={`links ${clicked ? 'active' : ''}`}>
-          <a onClick={handleClick} href="./Incripcion">Incrcipcion</a>
-        </nav>
-      </div>
+      <Navbar> 
+        <Link to ="/pages/Incripcion"   onClick={handleClick}>Incrcipcion</Link>
+      </Navbar>
       <section className="form">
         <form onSubmit={handleSubmit((onSubmit))}>
           <label className="names">Nombre</label>
@@ -98,6 +90,7 @@ export default function Consultas() {
             })}
           ></textarea>
           <p>{errors.mensaje?.message}</p>
+          <input type="hidden" name="_autoresponse" value="Gracias por Consultarnos ! a la brevedad nos contactaremos"/>
           <section className='button'>
             <button type="reset">Cancelar</button>
             <button type='submit'>Enviar</button>

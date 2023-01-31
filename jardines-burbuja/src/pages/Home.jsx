@@ -1,11 +1,23 @@
-import Header from '../includes/Header'
+import Navbar from '../includes/Header'
+// import Header from '../includes/Header'
 import Footer from '../includes/Footer'
+ import { useState } from 'react'
 import "../../public/styles/Home.css"
-// import "../../styles/Home.css"
-export default function Navbar() {
+import { Link } from "react-router-dom"
+
+export default function Home() {
+  const [clicked, setClicked] = useState(false)
+const handleClick = () => {
+  setClicked(!clicked)
+} 
+
   return (
     <>
-      <Header />
+
+       <Navbar >
+         <Link onClick={handleClick}  to ="./pages/Incripcion">Incrcipcion</Link>
+          <Link  onClick={handleClick} to ="./pages/Consultas">Consultas</Link>  
+      </Navbar>     
       <section className='texts'>
         <i className="fa-solid fa-house icons"></i>
         <article className="article">
