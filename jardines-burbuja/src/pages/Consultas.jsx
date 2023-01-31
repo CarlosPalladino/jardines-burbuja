@@ -44,11 +44,11 @@ export default function Consultas() {
 
   return (
     <>
-      <Navbar> 
-        <Link to ="./Incripcion">Incrcipcion</Link>
+      <Navbar>
+        <Link to="/pages/Incripcion">Incrcipcion</Link>
       </Navbar>
-      <section className="form">
-        <form onSubmit={handleSubmit((onSubmit))}>
+      <section >
+        <form className="form"onSubmit={handleSubmit((onSubmit))}>
           <label className="names">Nombre</label>
           <input type="text" id="relleno" name="nombre" onChange={seting}
             {...register("nombre", {
@@ -87,7 +87,7 @@ export default function Consultas() {
             })}
           ></textarea>
           <p>{errors.mensaje?.message}</p>
-          <input type="hidden" name="_autoresponse" value="Gracias por Consultarnos ! a la brevedad nos contactaremos"/>
+          <input type="hidden" name="_autoresponse" value="Gracias por Consultarnos ! a la brevedad nos contactaremos" />
           <section className='button'>
             <button type="reset">Cancelar</button>
             <button type='submit'>Enviar</button>

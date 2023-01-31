@@ -1,40 +1,16 @@
-.conteiner-top {
-  display: flex;
-}
-#logo{
-  width: 100%;
-    margin: -15px 16px 9px -90px;
-}
-
-
-
-.links a {
-  font-size: 1rem;
-  display: block;
-  text-transform: uppercase;
-  text-decoration: none;
-  margin-top: 1rem;
-}
-
-.form.article p {
-  font-size: 2opx;
-}
-
 .form {
-  align-items: baseline;
-  display: flex;
-  flex-direction: column;
-  border-radius: 44px;
-  margin-top: 50px;
+  text-align: center;
+  /* display: flex; */
 }
-
 
 
 
 form h3 {
-  color: white;
-  margin: 9px;
   font-size: 22px
+}
+
+.form.article p {
+  font-size: 2opx;
 }
 
 #relleno {
@@ -60,15 +36,9 @@ form h3 {
   padding: 3px
 }
 
-.names {
-  color: white;
-  margin-top: 10px;
-  margin: 24px;
-}
-
 .button {
   padding: 1.5rem;
-
+  gap: 13px;
 }
 
 .button button {
@@ -77,31 +47,22 @@ form h3 {
 }
 
 @media (min-width: 768px) {
-  .conteiner-top {
-    display: flex;
-  }
+
 
   .image-container {
     width: 50%;
   }
 
-  #logo {
-    margin: -15px 16px 9px -90px;
-    width: 50%;
-  }
 
   .form {
-    border-radius: 44px;
-    padding: 10px;
+    padding: 10px; 
     font-size: 20px;
     width: 60%;
-    align-items: center;
-    margin: 10rem;
+    margin: auto;
     margin-top: 50px;
   }
 
   .form p {
-    color: white;
     font-size: 12px;
   }
 
@@ -110,6 +71,7 @@ form h3 {
     padding: 3px;
     border-radius: 10px;
   }
+
   #relleno-text {
     margin: 15px;
     padding: 3px;
@@ -117,7 +79,7 @@ form h3 {
     border-radius: 10px;
     width: 90%;
   }
-  
+
 
   .names {
     color: white;
@@ -172,10 +134,8 @@ form h3 {
     font-size: 22px;
   }
 
-  .buton {
-    padding: 10px;
-    color: white;
-    background-color: #27366B;
+  .button {
+    padding: 2.5rem;
     border: none;
 
   }

@@ -2,27 +2,15 @@
   font-size: 19px;
   font-family: poppins;
 }
-.conteiner-top{
-  display: flex;
-}
+
 .image-container{
   width: 50%;
 
 }
-#logo{
-  width: 100%;
-  margin: -15px 16px 9px -90px;
 
+.forms {
+  text-align: center;
 }
-.links a{
-  font-size: 1rem;
-  display: block;
-  text-transform: uppercase; 
-  text-decoration: none;
-  margin-top: 2rem;
-}
-
-
 .forms p {
   color: white;
   text-align: center;
@@ -94,7 +82,7 @@ background: none;
     width: 60%;
     display: block;
     align-items: center;
-    margin: 10rem;
+    margin: auto;
     margin-top: 50px;
   }
   .forms label{

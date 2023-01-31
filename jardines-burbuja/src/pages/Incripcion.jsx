@@ -41,7 +41,7 @@ export default function Incripcion() {
       <Navbar >
         <div>  
     
-             <Link to ="./Consultas">Consultas</Link>
+             <Link to ="/pages/Consultas">Consultas</Link>
         </div>
       </Navbar>
       <section>

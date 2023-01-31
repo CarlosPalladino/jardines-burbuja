@@ -98,7 +98,6 @@
   justify-content: flex-end;
 }
   .links a {
-    padding: 1rem;
     display: inline;
     display: flex;
     border-bottom: 2px solid ; 
