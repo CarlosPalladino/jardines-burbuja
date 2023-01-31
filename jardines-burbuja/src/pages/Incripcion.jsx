@@ -10,7 +10,6 @@ import Swal from 'sweetalert2'
 import withReactContent from 'sweetalert2-react-content'
 const MySwal = withReactContent(Swal)
 
-
 export default function Incripcion() {
   const [body, setBody] = useState({ nombre0: null, apellido0: null, email: null, telefono: null, nombre1: null, apellido1: null, turno: null })
   const seting = e => {
@@ -37,12 +36,11 @@ export default function Incripcion() {
       })
     }
   }
-
-
   return (
     <>
       <Navbar >
         <div>  
+    
              <Link to ="./Consultas">Consultas</Link>
         </div>
       </Navbar>
@@ -121,9 +119,7 @@ export default function Incripcion() {
           </section>
         </form>
       </section>
-
       <Footer />
-
     </>
   )
 }

@@ -23,10 +23,7 @@ export default function Consultas() {
   }
   const { register, handleSubmit, formState: { errors } } = useForm();
 
-  const [clicked, setClicked] = useState(false)
-  const handleClick = () => {
-    setClicked(!clicked)
-  }
+
   const onSubmit = async (e) => {
     try {
       let result = await consultas(body)
@@ -48,7 +45,7 @@ export default function Consultas() {
   return (
     <>
       <Navbar> 
-        <Link to ="/pages/Incripcion"   onClick={handleClick}>Incrcipcion</Link>
+        <Link to ="./Incripcion">Incrcipcion</Link>
       </Navbar>
       <section className="form">
         <form onSubmit={handleSubmit((onSubmit))}>

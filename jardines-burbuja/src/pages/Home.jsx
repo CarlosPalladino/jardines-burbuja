@@ -1,5 +1,4 @@
 import Navbar from '../includes/Header'
-// import Header from '../includes/Header'
 import Footer from '../includes/Footer'
  import { useState } from 'react'
 import "../../public/styles/Home.css"
